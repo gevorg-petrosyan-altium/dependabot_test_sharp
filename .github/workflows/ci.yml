@@ -1,0 +1,19 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+      
+  pull_request:
+    branches:
+      - main
+
+concurrency: build
+
+jobs:
+  setup:
+    runs-on: windows-latest 
+    steps:
+    - name: Checkout actions
+      uses: actions/checkout@v1
+   
