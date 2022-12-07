@@ -10,10 +10,9 @@ registries:
     url: https://repository.altium.com/repository/nuget-private/index.json
     username: repository.reader
     password: ${{secrets.MY_NUGET_TOKEN}}
-updates:
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "daily"
+update_configs:
+  - package-manager: nuget # See documentation for possible values
+    directory: '/' # Location of package manifests
+    update_schedule: daily
     auth_token:
       secure: ${{secrets.MY_NUGET_TOKEN}}
