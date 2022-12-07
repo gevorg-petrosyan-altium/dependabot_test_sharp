@@ -7,9 +7,9 @@ version: 2
 registries:
   nuget-example:
     type: nuget-feed
-    url: https://repository.altium.com/repository/nuget-private/
+    url: https://repository.altium.com/repository/nuget-private/index.json
     username: repository.reader
-    password: ${{secrets.MY_NUGET_PASSWORD}}
+    password: ${{secrets.MY_NUGET_TOKEN}}
 updates:
   - package-ecosystem: "nuget" # See documentation for possible values
     directory: "/" # Location of package manifests
