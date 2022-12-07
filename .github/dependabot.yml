@@ -9,6 +9,7 @@ registries:
     type: nuget-feed
     url: https://repository.altium.com/repository/nuget-private/index.json
     username: repository.reader
+    password: ${{secrets.MY_NUGET_PASSWORD}}
     password: ${{secrets.MY_NUGET_TOKEN}}
 updates:
   - package-ecosystem: "nuget" # See documentation for possible values
