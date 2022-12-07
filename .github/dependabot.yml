@@ -9,3 +9,6 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+    registries:
+      username: "repository.reader"
+      password: "anl=L*3:cfCl7N5O|9*@"
