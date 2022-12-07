@@ -9,7 +9,7 @@ registries:
     type: nuget-feed
     url: https://repository.altium.com/repository/nuget-private/
     username: repository.reader
-    password: anl=L*3:cfCl7N5O|9*@
+    password: ${{secrets.MY_NUGET_PASSWORD}}
 updates:
   - package-ecosystem: "nuget" # See documentation for possible values
     directory: "/" # Location of package manifests
